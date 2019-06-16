@@ -40,6 +40,7 @@ class BezierCurve
   
   void DrawDebug()
   {
+     strokeWeight(1);
      PVector prevPos = new PVector(0, 0);
      for (int iter = 0; iter < m_ControlPoints.size(); ++iter)
      {

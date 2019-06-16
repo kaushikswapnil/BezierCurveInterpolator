@@ -19,6 +19,13 @@ void draw()
   background(255);
   
   bCurveInterpolator.Display();
+  
+  stroke(0);
+  strokeWeight(4);
+  line(0, 0, width, 0);
+  line(width, 0, width, height);
+  line(width, height, 0, height);
+  line(0, height, 0, 0);
 }
 
 boolean IsNullWithEpsilon(float value)
